@@ -72,23 +72,33 @@ span.psw {
 
 
 <div align="center">
-<form action="validation.php" method="POST">
+<form action="registration.php" method="POST">
   
-<h2>Login Form</h2>
+<h2>Create Account</h2>
   <div class="container">
+    <label for="uname"><b>First name</b></label>
+    <input type="text" placeholder="Enter First name" name="fname" required>
+
+    <label for="uname"><b>Last name</b></label>
+    <input type="text" placeholder="Enter Last name" name="lname" required>
+
+    <label for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="pswd" required>
+    <input type="password" placeholder="Enter Password" name="pswd1" required>
+
+    <label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pswd2" required>
         
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+    <button type="submit" name="submit">Signup</button>
+    
   </div>
 
-  <div class="container"><span class="psw"> <a href="#">Forgot password?</a></span></div>
+  
     
     
   
